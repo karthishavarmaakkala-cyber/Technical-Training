@@ -5,3 +5,20 @@ services:
     dockerContext: "backend jobconnect"
     dockerfilePath: "backend jobconnect/Dockerfile"
     plan: free
+    envVars:
+      - key: FRONTEND_ORIGIN
+        value: https://jobconnect-frontend.onrender.com
+  - type: web
+    name: jobconnect-frontend
+    runtime: static
+    rootDir: "frontend jobconnect"
+    buildCommand: npm ci && npm run build
+    staticPublishPath: build
+    plan: free
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://jobconnect-backend.onrender.com/api
