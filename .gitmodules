@@ -1,0 +1,6 @@
+[submodule "backend jobconnect"]
+	path = backend jobconnect
+	url = https://github.com/karthishavarmaakkala-cyber/jobconnect-backend.git
+[submodule "frontend jobconnect"]
+	path = frontend jobconnect
+	url = https://github.com/karthishavarmaakkala-cyber/jobconnect-frontend.git
