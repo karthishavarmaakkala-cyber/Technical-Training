@@ -7,4 +7,11 @@ services:
     plan: free
     envVars:
       - key: FRONTEND_ORIGIN
-        value: https://jobconnect-frontend-3cib.onrender.com
+        value: https://jobconnect-frontend.onrender.com
+
+  - type: web
+    name: jobconnect-frontend
+    env: docker
+    dockerContext: "frontend jobconnect"
+    dockerfilePath: "frontend jobconnect/Dockerfile"
+    plan: free
