@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: jobconnect-backend
+    env: docker
+    dockerfilePath: backend jobconnect/Dockerfile
+    plan: free
