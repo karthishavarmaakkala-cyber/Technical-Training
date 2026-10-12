@@ -2,6 +2,6 @@ services:
   - type: web
     name: jobconnect-backend
     env: docker
-    dockerContext: backend jobconnect
-    dockerfilePath: backend jobconnect/Dockerfile
+    dockerContext: "backend jobconnect"
+    dockerfilePath: "backend jobconnect/Dockerfile"
     plan: free
