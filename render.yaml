@@ -7,7 +7,7 @@ services:
     plan: free
     envVars:
       - key: FRONTEND_ORIGIN
-        value: https://jobconnect-frontend.onrender.com
+        value: https://jobconnect-frontend-gs6u.onrender.com
 
   - type: web
     name: jobconnect-frontend
